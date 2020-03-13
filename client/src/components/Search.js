@@ -8,11 +8,11 @@ const Search = (props) => {
     const soccerPlayers = props.soccerData;
     const [handleChange, searchResults, formSubmit, searchTerm] = useInput(soccerPlayers);
 
-    return(
+    return (
         <div>
             <div>
                 <form onSubmit={formSubmit}>
-                    <input 
+                    <input
                         id="search"
                         type="text"
                         name="textfield"

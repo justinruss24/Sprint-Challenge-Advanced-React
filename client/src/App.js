@@ -4,7 +4,7 @@ import './App.css';
 import Search from "./components/Search";
 
 class App extends React.Component {
-  constructor(){
+  constructor() {
     super();
     this.state = {
       soccerData: [],
@@ -14,13 +14,13 @@ class App extends React.Component {
   //class component fetch api data
   componentDidMount() {
     axios.get('http://localhost:5000/api/players')
-    .then(response => {
-      console.log(response.data);
-      this.setState({
-        soccerData: response.data
-      });
-    })
-    .catch(error => console.log(error))
+      .then(response => {
+        console.log(response.data);
+        this.setState({
+          soccerData: response.data
+        });
+      })
+      .catch(error => console.log(error))
   }
 
   render() {
@@ -31,7 +31,8 @@ class App extends React.Component {
       </div>
     );
   }
-  
+
 }
+
 
 export default App;
