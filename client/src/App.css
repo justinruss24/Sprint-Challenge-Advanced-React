@@ -22,12 +22,15 @@ body{
 }
 .soccerPlayer{
   border:1px solid black;
+  color: white;
+  background-color: #9999ff; 
   width:30%;
   height:90px;
   text-align:center;
   margin:10px 0;
   box-shadow: 0 15px 15px rgba(0,0 ,0, .25);
   border-radius:20px;
+  padding-bottom: 2%;
 }
 .player{
   font-size:1.2rem;
@@ -37,8 +40,10 @@ body{
   font-size:1.1rem;
 }
 .results{
-  border:2px solid blue;
+  border:2px solid #ffff00;
   width:200px;
+  color: white;
+  background-color: #9999ff;
   text-align:center;
   border-radius:20px;
   margin:20px auto;

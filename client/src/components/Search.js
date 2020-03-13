@@ -5,7 +5,7 @@ import { useInput } from "../hooks/useInput";
 
 const Search = (props) => {
 
-    let soccerPlayers = props.soccerData;
+    const soccerPlayers = props.soccerData;
     const [handleChange, searchResults, formSubmit, searchTerm] = useInput(soccerPlayers);
 
     return(
@@ -38,7 +38,7 @@ const Search = (props) => {
                 {soccerPlayers.map(player => {
                     return (
                         <div className="soccerPlayer" key={player.id}>
-                            <p className="player">{player.name}</p>
+                            <p className="player"> ⚽️ {player.name} ⚽️ </p>
                             <p className="country">{player.country}</p>
                         </div>
                     )
